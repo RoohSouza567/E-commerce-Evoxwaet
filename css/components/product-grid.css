@@ -1,0 +1,132 @@
+/* product-grid.css */
+.card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 20px;
+  min-height: 220px;
+}
+
+.highlight {
+  grid-area: highlight;
+  background-image: url(../../images/products/card_imagem.png);
+}
+
+.sneaker-purple {
+  grid-area: sneaker-purple;
+  background-image: url(../../images/products/marfim_casual.png);
+}
+
+.model {
+  grid-area: model;
+  background-image: url(../../images/products/modelo__masculino.png);
+}
+
+.sneaker-color {
+  grid-area: sneaker-color;
+  background-image: url(../../images/products/masculino_casual.png);
+}
+
+.sneaker-white {
+  grid-area: sneaker-white;
+  background-image: url(../../images/products/roxo_casual.png);
+}
+
+.sneaker-silver {
+  grid-area: sneaker-silver;
+  background-image: url(../../images/products/rosa_1.png);
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas:
+    "highlight highlight sneaker-purple sneaker-purple"
+    "highlight highlight model sneaker-color"
+    "sneaker-white sneaker-white model sneaker-silver";
+  gap: 30px;
+  padding: 0 1rem;
+}
+
+.top1-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: calc(100% - 2rem);
+}
+
+.card-title {
+  color: #ededed;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  color: #ededed;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 260px);
+    grid-template-areas:
+      "highlight highlight"
+      "sneaker-purple model"
+      "sneaker-color sneaker-silver"
+      "sneaker-white sneaker-white";
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 280px;
+    grid-template-areas:
+      "highlight"
+      "sneaker-purple"
+      "model"
+      "sneaker-color"
+      "sneaker-white"
+      "sneaker-silver";
+    gap: 16px;
+    padding: 0 1rem;
+  }
+
+  .card {
+    min-height: 280px;
+    border-radius: 16px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+
+  .cta-group .btn {
+    width: 130px;
+    height: 42px;
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}

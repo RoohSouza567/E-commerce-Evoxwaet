@@ -1,0 +1,58 @@
+/* base.css limpo - estilos removidos */
+
+/* Base CSS - estilos globais e variáveis de design */
+
+body {
+    font-family: var(--fonte-principal);
+    color: #333333;
+   
+}
+
+main{
+    padding: 6.5rem 1.5rem 0;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+@media (max-width: 700px) {
+  main {
+    padding:5.5rem 0 0;
+  }
+  .btn {
+    width: 140px;
+    height: 44px;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  width: 161px;
+  height: 48px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px 20px;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  line-height: 23px;
+}
+.btn-filled {
+  background-color: #ffffff;
+  color: #6329a2;
+  line-height: 23px;
+}
+
+.btn:hover{
+    background-color: #6329a2;
+    color: #ffffff;
+    border-color: #6329a2;
+}

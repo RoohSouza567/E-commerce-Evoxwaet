@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>E-commerce — EvoWear - Roupas de Academia Online</title>
+    <meta
+      description="Compre os melhores tênis e sneakers online na SyntaxWear. Encontre os modelos mais estilosos e confortáveis para todas as ocasiões. Aproveite nossas ofertas exclusivas!"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/hero.css" />
+    <link rel="stylesheet" href="css/components/product-categorias.css" />
+    <link rel="stylesheet" href="css/components/product-grid.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <!-- logo e navegação -->
+        <h1 class="logo">
+          <a href="/" title="EvoWear - Roupas de Academia  Online">
+            <img src="./images/logo/logo.svg" alt="Menu" />
+          </a>
+        </h1>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
+          <span class="menu-icon-bar"></span>
+          <span class="menu-icon-bar"></span>
+          <span class="menu-icon-bar"></span>
+        </label>
+        <label for="menu-toggle" class="menu-backdrop" aria-hidden="true"></label>
+
+        <nav class="nav-container" aria-label="Menu principal">
+          <div class="nav-group nav-center">
+            <ul>
+              <li><a href="#">Masculino</a></li>
+              <li><a href="#">Feminino</a></li>
+              <li><a href="#">Outlet</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-group nav-right">
+            <ul>
+              <li class="nav-link-text"><a href="#">Nossas lojas</a></li>
+              <li class="nav-link-text"><a href="#">Sobre</a></li>
+              <li class="nav-icon">
+                <a href="#" aria-label="Minha conta">
+                  <img src="./images/icons/user.svg" alt="Minha conta" />
+                </a>
+              </li>
+              <li class="nav-icon">
+                <a href="#" aria-label="Ajuda">
+                  <img src="./images/icons/help.svg" alt="Ajuda" />
+                </a>
+              </li>
+              <li class="nav-icon">
+                <a href="#" aria-label="Carrinho">
+                  <img src="./images/icons/bag.svg" alt="Carrinho" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <!-- Estrutura macro da seção hero -->
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <span class="hero-subtitle">EvoWear</span>
+            <h2 class="hero-title">"Sua rotina merece tecnologia e estilo."</h2>
+            <div class="hero-buttons">
+              <a class="btn btn-outline" href="#">Ver Modelos</a>
+              <a class="btn btn-filled" href="#">Compre</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories-section">
+        <!-- Estrutura macro da seção de categorias de tênis -->
+        <div class="category-card">
+          <a href="#" class="category-link casual">
+            <span class="overlay"></span>
+            <span class="category-name btn btn-outline">Top</span>
+          </a>
+        </div>
+
+        <div class="category-card">
+          <a href="#" class="category-link esporte">
+            <span class="overlay"></span>
+            <span class="category-name btn btn-outline">Camisa</span>
+          </a>
+        </div>
+
+        <div class="category-card">
+          <a href="#" class="category-link moderno">
+            <span class="overlay"></span>
+            <span class="category-name btn btn-outline">Short</span>
+          </a>
+        </div>
+
+        <div class="category-card">
+          <a href="#" class="category-link futurista">
+            <span class="overlay"></span>
+            <span class="category-name btn btn-outline">Calça</span>
+          </a>
+        </div>
+      </section>
+      
+      <!--produtos cards-->
+      <section class="grid-section">
+        <div class="card highlight">
+          <div class="top1-content">
+            <h3 class="card-title">EvoWear</h3>
+            <p class="card-subtitle">Estilo Urbano com atitude</p>
+            <div class="cta-group">
+              <a href="#" class="btn btn-outline">Feminino</a>
+              <a href="#" class="btn btn-outline">Masculino</a>
+            </div>
+          </div>
+        </div>
+        <div class="card sneaker-purple"></div>
+        <div class="card model"></div>
+        <div class="card sneaker-color"></div>
+        <div class="card sneaker-white"></div>
+        <div class="card sneaker-silver"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-right">
+          <form class="newsletter-form">
+            <label for="email">Inscreva-se em nossa Newsletter</label>
+            <input
+              id="email"
+              placeholder="Seu e-mail aqui"
+              required>
+          </form>
+
+          <div class="footer-social">
+            <span>Redes Sociais</span>
+            <ul>
+              <li><a href="https://www.instagram.com" target="_blank"><img src="images/icons/instagram.svg" alt="Instagram"></a></li>
+              <li><a href="https://www.whatsapp.com" target="_blank"><img src="images/icons/whatsapp.svg" alt="WhatsApp"></a></li>
+              <li><a href="https://www.tiktok.com" target="_blank"><img src="images/icons/tiktok.svg" alt="TikTok"></a></li>
+              <li><a href="https://www.facebook.com" target="_blank"><img src="images/icons/facebook.svg" alt="Facebook"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <div class="footer-column">
+            <strong>Masculino</strong>
+            <ul>
+              <li><a href="#">Camisa</a></li>
+              <li><a href="#">Bermuda</a></li>
+              <li><a href="#">Short</a></li>
+              <li><a href="#">Calça</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <strong>Feminino</strong>
+            <ul>
+              <li><a href="#">Camisa</a></li>
+              <li><a href="#">Bermuda</a></li>
+              <li><a href="#">Short</a></li>
+              <li><a href="#">Calça</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <strong>Outlet</strong>
+            <ul>
+              <li><a href="#">Masculino</a></li>
+              <li><a href="#">Feminino</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <strong>Nossas Lojas</strong>
+            <ul>
+              <li><a href="#">Loja física</a></li>
+              <li><a href="#">Loja online</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <strong>Sobre</strong>
+            <ul>
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Missão</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright. All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
