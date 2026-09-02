@@ -10,8 +10,11 @@
 
 .category-card{
     position: relative; /* Necessário para posicionar a sobreposição, esse e o pai*/
-    width: 317px;
-    height: 500px;
+    /* Mantém os quatro cards na mesma linha em telas de notebook. */
+    width: calc((100% - 90px) / 4);
+    max-width: 317px;
+    aspect-ratio: 317 / 500;
+    height: auto;
     border-radius: 15px;
     overflow: hidden;
 }
